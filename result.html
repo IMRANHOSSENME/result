@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Results</h1>
+        <form id="searchForm">
+            <label for="regulation">Regulation:</label>
+            <select id="regulation" name="regulation">
+                <option value="2022">2022</option>
+                <option value="Not Available">Not Available</option>
+            </select>
+            <label for="examination">Examination:</label>
+            <select id="examination" name="examination">
+                <option value="DIPLOMA IN ENGINEERING">DIPLOMA IN ENGINEERING</option>
+                <option value="Not Available">Not Available</option>
+            </select>
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent the default form submission
+            const regulation = document.getElementById('regulation').value;
+            const examination = document.getElementById('examination').value;
+            const rollNumber = document.getElementById('rollNumber').value;
+            // Redirect to view.html with query parameters
+            window.location.href = `view.html?regulation=${regulation}&examination=${examination}&rollNumber=${rollNumber}`;
+        });
+    </script>
+</body>
+</html>

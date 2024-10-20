@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view.css">
+    <title>Result Page</title>
+</head>
+<body>
+    <section class="result">
+        <header>
+            <h3 class="hh1">BANGLADESH TECHNICAL EDUCATION BOARD</h3>
+            <h4 class="hh2">Office of the Controller of Examinations</h4>
+            <h5 class="hh3">Agargaon, Sherebangla Nagar, Dhaka-1207</h5>
+        </header>
+        <h3 class="DP1">RESULT OF DIPLOMA IN ENGINEERING-2023</h3>
+        <div class="student-info">
+            <table>
+                <tr>
+                    <td>Roll No</td>
+                    <td id="roll_number"></td>
+                    <td>Registration No</td>
+                    <td>[NOT SHOWN]</td>
+                </tr>
+                <tr>
+                    <td>Board</td>
+                    <td>BTEB</td>
+                    <td>Regulation</td>
+                    <td id="regulation"></td>
+                </tr>
+                <tr>
+                    <td>Publish Date</td>
+                    <td id="publish_date"></td>
+                    <td>Type</td>
+                    <td id="type"></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td id="ngpa"></td>
+                    <td>Status</td>
+                    <td class="pf" id="status"></td>
+                </tr>
+                <tr>
+                    <td>Name of Institute</td>
+                    <td colspan="3" id="polytechnic_name"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="grades">
+            <h3 class="DP1">SEMESTER FINAL RESULT</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Referred Subject Name</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="semester"></td>
+                        <td id="referred_subjects"></td>
+                        <td id="ngrade"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="DP1">ALL SEMESTER</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>GPA</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st</td>
+                        <td id="s1st_gpa"></td>
+                        <td id="s1st_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>2nd</td>
+                        <td id="s2nd_gpa"></td>
+                        <td id="s2nd_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td id="s3rd_gpa"></td>
+                        <td id="s3rd_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td id="s4th_gpa"></td>
+                        <td id="s4th_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>5th</td>
+                        <td id="s5th_gpa"></td>
+                        <td id="s5th_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>6th</td>
+                        <td id="s6th_gpa"></td>
+                        <td id="s6th_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>7th</td>
+                        <td id="s7th_gpa"></td>
+                        <td id="s7th_grade">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>8th</td>
+                        <td id="s8th_gpa"></td>
+                        <td id="s8th_grade">N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="DP1">TOTAL CGPA</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>CGPA</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ALL</td>
+                        <td id="CGPA">4.0</td>
+                        <td id="GRADE">A+</td>
+                    </tr>
+                </tbody>
+            </table>
+            <footer>
+                <p>DEVELOPED & IMRAN HOSSEN BY DARKBDSHOP | MPI STUDENT</p>
+            </footer>
+        </div>
+        <div class="actions">
+            <button onclick="searchAgain()">Search Again</button>
+            <button onclick="window.print()">Print</button>
+        </div>
+    </section>
+ 
+    <script src="js/view.js"></script>
+</body>
+</html>

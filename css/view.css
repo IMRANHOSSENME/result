@@ -1,0 +1,225 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.pf {
+    color: green;
+}
+
+header {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .hh1 {
+    padding: 0;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+header .hh2 {
+    margin: 0;
+}
+
+header .hh3 {
+    margin: 0 0 10px 0;
+}
+
+.DP1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #04AA6D;
+    color: #000;
+}
+
+section.result {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 210mm; /* A4 width */
+}
+
+.status-passed {
+    color: green;
+    font-weight: bold;
+}
+.status-failed {
+    color: red;
+    font-weight: bold;
+}
+
+.student-info {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.student-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.student-info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.grades table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.grades th, .grades td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.actions button:hover {
+    background-color: #21867a;
+}
+
+footer {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+/* Print styles */
+@media print {
+    @page {
+        margin: 0;
+    }
+    body {
+        background-color: white;
+        margin: 0;
+    }
+    header {
+        color: black;
+        padding: 0;
+        margin: 0;
+    } 
+    header .hh1 {
+        color: black;
+    }
+    title, .actions {
+        display: none;
+    }
+    .DP1 {
+        margin: 10px;
+    }
+    section.result {
+        margin: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+    .actions {
+        display: none;
+    }
+    .student-info {
+        display: block;
+    }
+    .student-info table {
+        width: 100%;
+    }
+    .grades th, .grades td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+}
+
+/* Responsive styles for mobile and tablet */
+@media (max-width: 1024px) {
+    section.result {
+        padding: 15px;
+        margin: 10px;
+    }
+    header, .DP1, .grades h3 {
+        font-size: 1.2em;
+    }
+    .student-info, .grades, .actions {
+        padding: 10px;
+    }
+    table, th, td {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .DP1, .grades h3 {
+        font-size: 1em;
+    }
+    .student-info, .grades, .actions {
+        padding: 5px;
+    }
+    table, th, td {
+        font-size: 12px;
+        padding: 4px;
+    }
+    .actions button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .DP1, .grades h3 {
+        font-size: 0.9em;
+    }
+    .student-info, .grades, .actions {
+        padding: 5px;
+    }
+    table, th, td {
+        font-size: 10px;
+        padding: 3px;
+    }
+    .actions button {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+    }
+}
